@@ -1,0 +1,25 @@
+Who pays for education and health in Pakistan - Streamlit dashboard
+====================================================================
+
+1. Keep app.py in the same folder as these data files:
+   - pakistan_oda_by_donor_sector_2015_2024.csv
+   - pakistan_aid_by_modality_2015_2024.csv
+   - pakistan_oda_projects_2015_2024.csv
+   - hies_household_spending_2018-19_2024-25.csv
+   - hies_school_type_2024-25.csv
+   - education_spending_PIE_2019-20_2025-26.csv
+   - government_spending_education_health_2018-19_2024-25.csv
+
+2. Open Anaconda Prompt (or a terminal) in this folder and run once:
+       pip install -r requirements.txt
+
+3. Start the dashboard:
+       streamlit run app.py
+   It opens in your browser at http://localhost:8501
+
+To update later: replace a CSV with a newer one (same columns) and refresh the page.
+Assumptions (households, exchange rate, inflation) are at the top of app.py.
+
+Logo: save the Gallup Pakistan Digital Analytics logo in this folder as logo.png
+(or logo.jpg / logo.svg). It appears at the top of the sidebar automatically.
+A wide logo on a transparent or white background works best.

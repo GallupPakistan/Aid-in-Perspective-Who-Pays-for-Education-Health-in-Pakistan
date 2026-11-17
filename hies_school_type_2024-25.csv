@@ -1,0 +1,21 @@
+level,school_type,urban_pct,rural_pct,total_pct
+All levels,Government,40.0,67.0,57.0
+All levels,Private,53.0,26.0,37.0
+All levels,Deeni madrassa,3.0,2.0,2.0
+All levels,NGO/Trust,3.0,4.0,4.0
+All levels,Others,0.0,0.0,0.0
+Primary,Government,35.0,67.0,55.0
+Primary,Private,59.0,27.0,39.0
+Primary,Deeni madrassa,2.0,2.0,2.0
+Primary,NGO/Trust,4.0,5.0,4.0
+Primary,Others,0.0,0.0,0.0
+Middle,Government,47.0,69.0,60.0
+Middle,Private,44.0,22.0,31.0
+Middle,Deeni madrassa,5.0,5.0,5.0
+Middle,NGO/Trust,4.0,4.0,4.0
+Middle,Others,0.0,0.0,0.0
+Matric,Government,54.0,69.0,62.0
+Matric,Private,42.0,27.0,34.0
+Matric,Deeni madrassa,1.0,2.0,2.0
+Matric,NGO/Trust,2.0,2.0,2.0
+Matric,Others,0.0,0.0,0.0

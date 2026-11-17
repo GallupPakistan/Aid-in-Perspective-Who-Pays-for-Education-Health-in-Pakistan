@@ -1,4 +1,4 @@
-Who pays for education and health in Pakistan - Streamlit dashboard
+Aid in Perspective: Who Pays for Education & Health in Pakistan - Streamlit dashboard
 ====================================================================
 
 1. Keep app.py in the same folder as these data files:

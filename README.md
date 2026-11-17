@@ -1,4 +1,4 @@
-# Who Pays? Financing education and health in Pakistan
+# Aid in Perspective: Who Pays for Education & Health in Pakistan
 
 Interactive Streamlit dashboard comparing what **households**, the **government** and **international aid**
 spend on education and health in Pakistan.

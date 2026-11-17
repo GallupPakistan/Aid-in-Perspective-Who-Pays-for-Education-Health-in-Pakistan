@@ -1,5 +1,5 @@
 """
-Who Pays? Financing education and health in Pakistan
+Aid in Perspective: Who Pays for Education & Health in Pakistan
 Households (HIES) vs government (PIE / Pakistan Economic Survey) vs international aid (OECD CRS).
 
 Run:  streamlit run app.py
@@ -55,7 +55,7 @@ pio.templates["clean"] = go.layout.Template(layout=dict(
 ))
 pio.templates.default = "clean"
 
-st.set_page_config(page_title="Who Pays? Pakistan", page_icon="📊", layout="wide",
+st.set_page_config(page_title="Aid in Perspective · Pakistan", page_icon="📊", layout="wide",
                    initial_sidebar_state="expanded")
 
 st.markdown(f"""
@@ -151,7 +151,7 @@ def usd_m(x):
 def hero(title, text, tags=()):
     t = "".join(f"<span class='tag'>{x}</span>" for x in tags)
     st.markdown(f"<div class='hero'><div style='font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;"
-                f"opacity:.8;margin-bottom:.35rem'>Gallup Pakistan · Digital Analytics · Draft for discussion</div>"
+                f"opacity:.8;margin-bottom:.35rem'>Aid in Perspective · Gallup Pakistan Digital Analytics · Draft for discussion</div>"
                 f"<h1>{title}</h1><p>{text}</p>{t}</div>", unsafe_allow_html=True)
 
 
@@ -454,8 +454,8 @@ with st.sidebar:
                     f"image-rendering:auto'>", unsafe_allow_html=True)
     else:
         st.markdown(f"<div class='sb-org'>{ORG}</div>", unsafe_allow_html=True)
-    st.markdown("<div class='sb-brand'>Who Pays?</div>"
-                "<div class='sb-sub'>Financing education & health in Pakistan</div>",
+    st.markdown("<div class='sb-brand'>Aid in Perspective</div>"
+                "<div class='sb-sub'>Who pays for education & health in Pakistan</div>",
                 unsafe_allow_html=True)
     page = st.radio("Navigate", PAGES, label_visibility="collapsed")
     if page not in ("Methodology", "Key findings"):
@@ -469,8 +469,8 @@ SB_FOOT = (f"<div class='sb-foot'><b>Data</b><br>OECD CRS (Oct 2026 release)<br>
 # 1. WHO PAYS
 # ==========================================================================
 if page == "Key findings":
-    hero("Key findings",
-         "The main messages from the data, at a glance. Open the page named on each card for the detail.",
+    hero("Aid in Perspective: Who Pays for Education & Health in Pakistan",
+         "Key findings: the main messages from the data, at a glance. Open the page named on each card for the detail.",
          ["Pakistan", "Education & health", "2015–2025"])
     now, then = shares(who_pays("2024-25")), shares(who_pays("2018-19"))
     sc = cut_scenario(aid)
@@ -1488,6 +1488,7 @@ else:
 """)
 
 st.sidebar.markdown(SB_FOOT, unsafe_allow_html=True)
-st.markdown(f"<div class='foot'><span>Prepared by <b>{ORG}</b> · Draft for discussion · November 2026</span>"
+st.markdown(f"<div class='foot'><span><b>Aid in Perspective: Who Pays for Education & Health in Pakistan</b> · Prepared by "
+            f"{ORG} · Draft for discussion · November 2026</span>"
             f"<span>Data: OECD, PBS, Pakistan Institute of Education, Finance Division</span></div>",
             unsafe_allow_html=True)
